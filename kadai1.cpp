@@ -23,3 +23,8 @@ int main() {
         cout << "error" << endl;
     }
     }
+
+//atcoder1章計算問題
+int main() {
+  cout << 100 * (100+1) / 2 << endl;
+}
