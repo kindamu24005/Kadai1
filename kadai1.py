@@ -46,7 +46,5 @@ elif op == "*":
   print(A*B)
 elif op == "/"  and B != 0:
   print((math.floor(A/B)))
-else:
-  print("error")
 
 
