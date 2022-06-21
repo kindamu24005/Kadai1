@@ -1,3 +1,5 @@
+import math
+
 def sosuhantei(n): #素数判定の定義
   if n == 2: #2は素数
     return True
@@ -17,11 +19,10 @@ for j in range(2, int((n**0.5)+1)): #素数判定を使う
     while n % j == 0:
       n/=j
       ans.append(j)
-if n != 1: #残ったNが1ではない(素数)の時
+if not n == 1: #残ったNが1ではない(素数)の時　
   ans.append(int(n))
 
 #ファイ関数の定義に当てはめる
-import math
 a = 1
 for i in set(ans): #リストの重複しているものを削る
   N *= (1-1/i)
